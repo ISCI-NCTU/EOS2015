@@ -3,7 +3,8 @@
 compile
 $gcc -o lab lab1.c
 
-或ARM compilier
+或(ARM compilier)
+
 $arm-linux-gnueabihf-gcc -o lab1 lab1c.c
 
 反組譯
