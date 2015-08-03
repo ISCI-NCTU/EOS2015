@@ -3,7 +3,7 @@
 
 int32_t sign( int32_t a)
 {
-	return 1^((a>>31)&0x1);
+	return 1^((a>>31)&0x1); 
 }
 
 
