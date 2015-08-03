@@ -1,3 +1,6 @@
+/*compare two 32bit interger without using if-else and ">" , "<"   and prevent overflow*/
+
+
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -24,3 +27,20 @@ int32_t b=-2;
 printf("a=%d b=%d c= %d \n",a,b,c);
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
