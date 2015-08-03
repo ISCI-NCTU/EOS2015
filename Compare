@@ -1,12 +1,11 @@
-/*compare two 32bit interger without using if-else and ">" , "<"   and prevent overflow*/
+/*compare two 32bit interger without using 
+if-else and ">" , "<"   and prevent overflow*/
 
+#include <stdint.h>
 
-#include<stdio.h>
-#include<stdlib.h>
-
-int32_t sign( int32_t a)
+inline int32_t sign( int32_t a)
 {
-	return 1^((a>>31)&0x1); 
+	return 1^((a>>31)&0x1);
 }
 
 
@@ -27,11 +26,6 @@ int32_t b=-2;
 printf("a=%d b=%d c= %d \n",a,b,c);
 
 }
-
-
-
-
-
 
 
 
