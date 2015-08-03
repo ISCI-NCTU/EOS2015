@@ -3,27 +3,27 @@ if-else and ">" , "<"   and prevent overflow*/
 
 #include <stdint.h>
 
-inline int32_t sign( int32_t a)
+inline int32_t sign(int32_t a)
 {
-	return 1^((a>>31)&0x1);
+	return 1 ^ ((a >> 31) & 0x1);
 }
 
 
 
 int32_t max(int32_t a, int32_t b)
 {
-return  sign(a)*sign(b)*( a*sign(a-b) +b*( 1^sign(a-b) ) )+ (sign(a)*a + sign(b)*b) ;
+	return  sign(a) * sign(b) * (a * sign(a - b) + b * (1 ^ sign(a - b))) + (sign(a) * a + sign(b) * b) ;
 }
 
 
 void main(void)
 
 {
-int32_t c;
-int32_t a=247483647;
-int32_t b=-2;
- c= max (a,b);
-printf("a=%d b=%d c= %d \n",a,b,c);
+	int32_t c;
+	int32_t a = 247483647;
+	int32_t b = -2;
+	c = max(a, b);
+	printf("a=%d b=%d c= %d \n", a, b, c);
 
 }
 
